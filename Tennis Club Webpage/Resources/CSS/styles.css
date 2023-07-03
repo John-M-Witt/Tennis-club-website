@@ -1,0 +1,208 @@
+/* CSS HEX Palette 
+--black: #000000ff;
+--oxford-blue: #14213dff;
+--myrtle-green: #457273ff;
+--antiflash-white: #e9ecefff;
+--white: #ffffffff;*/
+
+html{
+    font-size: 24px;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+header{
+    position:fixed;
+    z-index: 100;
+    width:100%;
+    top: 0rem;
+    left: 0rem;
+    background-color:#457273ff; 
+}
+
+.main-nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-weight: 700;
+    font-size: 1rem;
+    }
+
+.main-nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-nav a:hover{
+    border-bottom: 0.2rem #e4ff1aff solid; 
+    cursor: pointer;
+    font-weight: 900;
+    color: #e4ff1aff;
+}
+
+.hero-title{
+    text-align: center;
+    color: #457273ff;
+    margin-top: 6rem;
+    padding: 0rem 2rem 1rem 2rem; 
+    }
+
+#home .container{
+    padding: 0rem 2rem 2rem 2rem;
+}
+.container{
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+
+.container p{
+    margin-top: 0;
+} 
+.left-column{
+    width: 48%;
+    line-height: 2rem;
+    }
+
+.right-column{
+    width: 48%;
+    line-height: 2rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.gray-section{
+    background-color: #e9ecef;
+    }
+   
+.section-title{
+    margin-top: 0rem;
+    color: #457273ff;
+}
+
+.players-rank{
+    margin: 0 auto;
+    border: solid black 0.2rem;
+    }
+
+.rank-table{
+    font-size: 0.95rem;
+}
+.rank-headings td {
+    text-decoration: underline;
+    vertical-align: bottom;
+    line-height:1rem;
+}
+
+.column-1, .column-2, .column-3, .column-4{
+    vertical-align: top;
+    line-height:1.2rem;
+} 
+
+.rank-title{
+    padding: 1rem 0rem;
+    text-align: center;
+ }
+
+.column-1{
+    padding-left: 1rem;
+    text-align: right;
+}
+
+.column-2 {
+    padding: 0rem 2rem;
+}
+
+.column-3{
+    padding-right: 1rem;
+    text-align: right;
+}
+
+.column-4{
+    padding-right: 1rem;
+    text-align: right;
+}
+
+.join-button{
+    display: flex;
+    justify-content: center;
+}
+
+#join button {
+    border: black solid 0.1rem;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    background-color: #14213dff;
+    color: #fff;
+    font-size: 1rem;
+    margin: 2rem auto;
+    background-color: #e4ff1aff; 
+    color:  #000;
+    font-weight: 700;
+}
+
+#join button:hover{
+    background-color:  #457273ff; 
+    color:  #fff;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.image-container{
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    padding: 2rem 2rem; 
+}
+
+.lifestyle-images{
+    max-width:30%;
+    text-align:center;
+}
+
+@media only screen and (max-width:1460px) {
+    html{font-size:20px;}
+}
+
+@media only screen and (max-width:1070px){
+    html{font-size:18px;}
+    .container {display: block;}
+    .left-column, .right-column{width:100%;}
+    .gray-section .container{
+        display: flex;
+        flex-direction: column-reverse;}
+}
+
+@media only screen and (max-width:750px){
+    html{font-size:16px;}
+    header {
+        position:static;
+    }
+    .main-nav{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width:100%;
+        padding: 0rem;
+    }
+    .main-nav li{
+        padding-top: 1rem;
+    }
+    
+    .main-nav li:last-child{
+        padding-bottom: 1rem;
+    }
+    .hero-title {
+        margin-top: 2rem;
+    }
+    #home .container{
+        padding: 0rem;
+    }
+    .container{
+        padding: 2rem 0rem;
+    }
+}
